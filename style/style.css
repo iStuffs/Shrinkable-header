@@ -1,0 +1,169 @@
+@import url(font-awesome.min.css);
+@import url(normalize.css);
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.7em;
+  color: #333;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  background: rgba(22, 160, 133, 0.9);
+  height: 125px;
+
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+
+  /* animation */
+  -webkit-transition: all 0.4s ease-in-out;
+
+  }
+
+.stick {
+  position: fixed;
+  top: 0;
+}
+
+
+h1 {
+  font-size: 45px;
+  line-height: 125px;
+  font-weight: 300;
+  margin: 0;
+  padding-left: 45px;
+  color: #fff;
+  text-align: center;
+
+  /* animation */
+  -webkit-transition: all 0.4s ease-in-out
+}
+
+.header-logo {
+  width: 55px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-130%,-50%);
+
+  border-radius: 50%;
+
+  /* animation */
+  -webkit-transition: all 0.4s ease-in-out
+}
+
+
+
+
+/* shrinked */
+.shrink {
+  height: 50px;
+}
+.shrink .header-logo {
+  display: none;
+}
+.shrink h1 {
+  font-size: 24px;
+  line-height: 50px;
+  padding-left: 25px;
+  color: #fff;
+  text-align: left;
+}
+
+.shrink + .content {
+  margin-top: 0;
+}
+
+
+
+.content {
+  padding-top: 125px;
+  position: relative;
+}
+
+
+
+.content-section {
+  position: relative;
+}
+
+
+.content .content-section:nth-child(1) {
+  background: #9b59b6;
+}
+.content .content-section:nth-child(2) {
+  background: #34495e;
+}
+.content .content-section:nth-child(3) {
+  background: #e67e22;
+}
+.content .content-section:nth-child(4) {
+  background: #2ecc71;
+}
+.content .content-section:nth-child(5) {
+  background: #3498db;
+}
+
+.content-text {
+  text-align: justify;
+  padding: 80px 45px 120px 45px;
+  margin: 0 auto;
+  max-width: 1080px;
+
+}
+
+.content-text:after{
+  font-family: "FontAwesome";
+  content: "\f13a";
+  color: #fff;
+  font-size: 45px;
+  display: block;
+  text-align: center;
+  opacity: 0.6;
+  /*margin-top: 40px;*/
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateY(50%);
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 45px;
+  font-size: 21px
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 35px;
+  }
+  .header-logo {
+    width: 45px;
+  }
+
+  .shrink h1 {
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 21px;
+  }
+  .header-logo {
+    width: 32px;
+  }
+  .shrink h1 {
+    font-size: 18px;
+  }
+}
