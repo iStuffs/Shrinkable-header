@@ -13,13 +13,13 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.7em;
-  color: #333;
+  color: #ecf0f1;
 }
 
 .header {
   position: relative;
   width: 100%;
-  background: rgba(22, 160, 133, 0.9);
+  background: rgba(26, 188, 156, 0.9);
   height: 125px;
 
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
@@ -42,7 +42,7 @@ h1 {
   font-weight: 300;
   margin: 0;
   padding-left: 45px;
-  color: #fff;
+  color: #ecf0f1;
   text-align: center;
 
   /* animation */
@@ -75,7 +75,6 @@ h1 {
   font-size: 24px;
   line-height: 50px;
   padding-left: 25px;
-  color: #fff;
   text-align: left;
 }
 
@@ -88,6 +87,7 @@ h1 {
 .content {
   padding-top: 125px;
   position: relative;
+  margin-bottom: 117px;
 }
 
 
@@ -124,7 +124,7 @@ h1 {
 .content-text:after{
   font-family: "FontAwesome";
   content: "\f13a";
-  color: #fff;
+  color: #ecf0f1;
   font-size: 45px;
   display: block;
   text-align: center;
@@ -137,11 +137,15 @@ h1 {
 }
 
 .footer {
-  background: #333;
-  color: #fff;
+  background: #2c3e50;
+  color: #ecf0f1;
   text-align: center;
   padding: 45px;
-  font-size: 21px
+  font-size: 21px;
+  z-index: -1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
